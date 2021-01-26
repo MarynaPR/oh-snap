@@ -76,6 +76,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 * [react hooks](https://reactjs.org/docs/hooks-overview.html)
 * [hooks AIP](https://reactjs.org/docs/hooks-reference.html)
 * [Lists and Keys](https://reactjs.org/docs/lists-and-keys.html)
+* [controlled components](https://reactjs.org/docs/forms.html#controlled-components)
+* [computed property names](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#computed_property_names)
 
 ##
 `npm install @testing-library/react @testing-library/jest-dom --save-dev`
