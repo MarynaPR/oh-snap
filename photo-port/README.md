@@ -73,7 +73,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 * [testing overview](https://reactjs.org/docs/testing.html)
 * [heroku never sleeps](https://kaffeine.herokuapp.com/)
 * [Github jest-dom docs](https://github.com/testing-library/jest-dom)
-
+* [react hooks](https://reactjs.org/docs/hooks-overview.html)
+* [hooks AIP](https://reactjs.org/docs/hooks-reference.html)
+* [Lists and Keys](https://reactjs.org/docs/lists-and-keys.html)
 
 ##
 `npm install @testing-library/react @testing-library/jest-dom --save-dev`
