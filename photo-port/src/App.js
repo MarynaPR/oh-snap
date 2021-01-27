@@ -1,8 +1,10 @@
+
 import React, { useState } from 'react';
 import Nav from './components/Nav';
 import About from './components/About';
 import Gallery from './components/Gallery';
 import ContactForm from './components/Contact';
+
 
 function App() {
   const [categories] = useState([
@@ -12,6 +14,14 @@ function App() {
     { name: 'landscape', description: 'Fields, farmhouses, waterfalls, and the beauty of nature' },
   ]);
 
+  const [contactSelected, setContactSelected] = useState(false);//so page doesn't show when user navigates to the page first
+  // const {
+  //   categories = [],
+  //   setCurrentCategory,
+  //   currentCategory,
+  //   contactSelected,
+  //   setContactSelected
+  // } = props;
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
   return (
@@ -20,14 +30,20 @@ function App() {
         categories={categories}
         setCurrentCategory={setCurrentCategory}
         currentCategory={currentCategory}
+        contactSelected={contactSelected}
+        setContactSelected={setContactSelected}
       ></Nav>
-      <main>
-        <div>
-          <ContactForm></ContactForm>
-          <Gallery currentCategory={currentCategory}></Gallery>
-          <About></About>
 
-        </div>
+      <main>
+        {!contactSelected ? (
+          <>
+            <Gallery currentCategory={currentCategory}></Gallery>
+            <About></About>
+            <ContactForm></ContactForm>
+          </>
+        ) : (
+            <ContactForm></ContactForm>
+          )}
       </main>
     </div>
   );
